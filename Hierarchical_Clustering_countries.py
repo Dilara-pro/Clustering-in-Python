@@ -21,13 +21,6 @@ distance_matrix = linkage(norm_country, method = 'complete', metric = 'euclidean
 cluster_labels = fcluster(distance_matrix, 3, criterion='maxclust')
 
 dn = dendrogram(distance_matrix, labels=range(1,21))
-plt.show()
-
-from scipy.cluster.hierarchy import linkage, fcluster, dendrogram
-from matplotlib import pyplot as plt
-import pandas as pd
-from scipy.cluster.vq import whiten
-import os
 
 directory = 'C:\\Users\\Huawei\\.spyder-py3\\model_girdileri'  
 filename = 'Country_City.csv'
